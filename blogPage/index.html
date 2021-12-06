@@ -4,9 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d7dfdd48cf.js" crossorigin="anonymous"></script>
     <title>Blog Page</title>
 </head>
 <body>
-    
+    <header>
+        <nav class="wrapper">
+            <div class="logo">Textilee</div>
+
+            <div class="navMenu">
+                <li><a href="">home</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">blog</a></li>
+                <li><a href="">contact</a></li>
+            </div>
+
+            <div class="burgerMenu"><i class="fas fa-bars"></i></div>
+        </nav>
+
+        <h1 class="wrapper">Blog</h1>
+    </header> 
+
+    <main>
+        <section class="blogSection">
+            <article>
+                <div class="blogImage"><img src="../assets/blog-post-image.jpg" alt="a stack of folded blue and purple linens"></div>
+                <div class="blogText">
+                    <p>Monday, October 5th, 2019 by Saron</p>
+                    <p>Curabitur labortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat it mi sollicitudin porttitorid sit amet risus. Nam tempus vel odio vitae aliquam. <br> In imperdiet eros id lacus vestibuum vestibulum. Suspendisse fermentum sem sagittisante venenatis egestatas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat. Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacu. <br> Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdient neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat egat semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus mattis. Mauris dignissim semper mattis. Fusce porttitor ami at suscipit. <br> Praesent facilisidolor sapien, vel sodales augue mollis ut. Mauris venenatis magna eu tortor posuere luctus. Aenean tincidunt turpis sed dui aliquam vehicula.</p>
+                </div>
+            </article>
+
+            <aside>
+                <div class="asideImg"><img src="../assets/sidebar-image.jpg" alt="rolls of raw, unhemmed, off white fabrics"></div>
+                <div class="asideMission">
+                    <h3>Our mission</h3>
+                    <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. Find out more.</p>
+                </div>
+                <ul class="asideList">
+                    <h3>Recent Posts</h3>
+                    <li>Donec facilisi tortor ut</li>
+                    <li>Augue lacinia at viverra</li>
+                    <li>Semper sed sapien metus</li>
+                    <li>Scelerisque nec pharetra</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section class="commentsSection">
+            <h3>Comments:</h3>
+            <div class="userComment">
+                <div><img src="../assets/comment-1.jpg" alt="a woman with long blonde hair smiles with all her teeth while looking off in the distance"></div>
+                <p>Tuesday December 9th, 2019 by Louise</p>
+                <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus..</p>
+            </div>
+            <div class="userComment">
+                <div><img src="../assets/comment-2.jpg" alt="a man in an orange toque and a black turtleneck looks over his shoulder and into the distance"></div>
+                <p>Wednesday December 10th, 2019 by JP</p>
+                <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula.</p>
+            </div>
+        </section>
+        <form action="">
+            <label for="name" class="sr-only">name</label>
+            <input type="name" id="name" placeholder="name">
+            <label for="email" class="sr-only">email</label>
+            <input type="email" id="email" placeholder="Email address">
+            <label for="comment" class="sr-only">comments</label>
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+            <button type="submit">post comment</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <p>Copyright © 2021 Juno College</p>
+        </div>
+    </footer>
 </body>
 </html>
