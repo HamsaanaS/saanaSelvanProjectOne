@@ -1,6 +1,182 @@
+// COLOR VARIABLES
+$darkBlue: #1A315C;
+$turquoiseBlue: #0CADC0;
+$lightBlue: #CCEDFB;
+$black: #1E1713;
+$blackTwo: #161515;
+$white: #FFFFFF;
+
 @import 'setup';
 @import 'typography';
 
 html {
     font-size: 125%;
+}
+
+.wrapper {
+    max-width: 1080px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: grey;
+    height: 75vh;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navMenu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navMenu li {
+    margin-left: 0.25rem;
+}
+
+.navMenu a {
+    padding: 0.25rem;
+}
+
+.burgerMenu {
+    position: absolute;
+    right: 1.5rem;
+    display: none;
+}
+
+
+figure {
+    max-width: 675px;
+    width: 60%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    bottom: -30%;
+    display: none;
+}
+
+img {
+    width: 100%;
+}
+
+// LEARN SECTION
+.learnSection {
+    background: $lightBlue;
+    padding: 6rem 0 4rem;
+}
+
+.learnFlexContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.learnTextFlex {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.learnImgContainer {
+    width: 25%;
+}
+
+.learnImg {
+    width: 300px;
+}
+
+.learnImg img {
+    box-shadow: 60px -16px $turquoiseBlue;
+}
+// LEARN SECTION END
+
+.gallery {
+    background-color: $darkBlue;
+    padding: 4rem 0;
+}
+
+.galleryFlex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.galleryFlex li {
+    width: calc((100% / 3) - 1rem);
+}
+
+.galleryFlex li:nth-child(2) {
+    margin: 0 0.5rem;
+}
+//  GALLERY END
+
+.upcomingSection {
+    background-color: $lightBlue;
+    padding: 2rem 0;
+}
+
+.upcomingFlex {
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.upcomingFlex li {
+    width: 50%;
+}
+
+// UPCOMING SECTION END
+
+.discoverSection {
+    background: $darkBlue;
+    padding: 3rem 0;
+}
+
+.discoverFlex1, .discoverFlex2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.discoverFlex1Img, .discoverFlex2Txt {
+    width: 65%;
+}
+
+.discoverFlex1Txt, .discoverFlex2Img {
+    width: 35%;
+}
+
+.discoverFlex1Txt, .discoverFlex2Txt {
+    text-align: left;
+}
+
+.ropeBackgroundImg {
+    background: grey;
+    padding: 5rem 0;
+}
+
+.searchSection {
+    background: $lightBlue;
+    padding: 4rem 0;
+}
+
+.searchSection div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background: $blackTwo;
+    padding: 1rem 0;
+}
+footer p {
+    color: $white;
+    text-align: center;
 }

@@ -1,3 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Pacifico&display=swap");
+h1, h2, h3, h4, h5, .logo, button {
+  font-family: "Pacifico", cursive;
+}
+
+a, p {
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font-size: 58px;
+  line-height: 68px;
+  color: #1A315C;
+}
+
+h2 {
+  font-size: 43px;
+  line-height: 58px;
+  letter-spacing: 2.7px;
+}
+
+h3 {
+  font-size: 40px;
+  text-align: right;
+  line-height: 58px;
+  letter-spacing: 2.5px;
+}
+
+.logo {
+  font-size: 30px;
+  line-height: 24px;
+  letter-spacing: 1.7px;
+}
+
+button {
+  font-size: 27px;
+  line-height: 32px;
+  letter-spacing: 1.4px;
+  text-align: center;
+}
+
+a {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 29px;
+  letter-spacing: 1.4px;
+  text-align: center;
+  text-decoration: none;
+  color: #1E1713;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 2px;
+}
+
 html {
   font-size: 125%;
+}
+
+.wrapper {
+  max-width: 1080px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: grey;
+  height: 75vh;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.navMenu {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navMenu li {
+  margin-left: 0.25rem;
+}
+
+.navMenu a {
+  padding: 0.25rem;
+}
+
+.burgerMenu {
+  position: absolute;
+  right: 1.5rem;
+  display: none;
+}
+
+figure {
+  max-width: 675px;
+  width: 60%;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  bottom: -30%;
+  display: none;
+}
+
+img {
+  width: 100%;
+}
+
+.learnSection {
+  background: #CCEDFB;
+  padding: 6rem 0 4rem;
+}
+
+.learnFlexContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.learnTextFlex {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+}
+
+.learnImgContainer {
+  width: 25%;
+}
+
+.learnImg {
+  width: 300px;
+}
+
+.learnImg img {
+  box-shadow: 60px -16px #0CADC0;
+}
+
+.gallery {
+  background-color: #1A315C;
+  padding: 4rem 0;
+}
+
+.galleryFlex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.galleryFlex li {
+  width: calc((100% / 3) - 1rem);
+}
+
+.galleryFlex li:nth-child(2) {
+  margin: 0 0.5rem;
+}
+
+.upcomingSection {
+  background-color: #CCEDFB;
+  padding: 2rem 0;
+}
+
+.upcomingFlex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.upcomingFlex li {
+  width: 50%;
+}
+
+.discoverSection {
+  background: #1A315C;
+  padding: 3rem 0;
+}
+
+.discoverFlex1, .discoverFlex2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.discoverFlex1Img, .discoverFlex2Txt {
+  width: 65%;
+}
+
+.discoverFlex1Txt, .discoverFlex2Img {
+  width: 35%;
+}
+
+.discoverFlex1Txt, .discoverFlex2Txt {
+  text-align: left;
+}
+
+.ropeBackgroundImg {
+  background: grey;
+  padding: 5rem 0;
+}
+
+.searchSection {
+  background: #CCEDFB;
+  padding: 4rem 0;
+}
+
+.searchSection div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background: #161515;
+  padding: 1rem 0;
+}
+
+footer p {
+  color: #FFFFFF;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

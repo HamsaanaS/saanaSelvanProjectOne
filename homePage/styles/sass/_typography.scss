@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Pacifico&display=swap');
+
+
+h1, h2, h3, h4, h5, .logo, button {
+    font-family: 'Pacifico', cursive;
+} 
+
+a, p {
+    font-family: 'Lato', sans-serif;
+}  
+
+h1 {
+    font-size: 58px;
+    line-height: 68px;
+    color: $darkBlue;
+}
+
+h2 {
+    font-size: 43px;
+    line-height: 58px;
+    letter-spacing: 2.7px;
+}
+
+h3 {
+    font-size: 40px;
+    text-align: right;
+    line-height: 58px;
+    letter-spacing: 2.5px;
+}
+
+
+.logo {
+    font-size: 30px;
+    line-height: 24px;
+    letter-spacing: 1.7px;
+}
+
+button {
+    font-size: 27px;
+    line-height: 32px;
+    letter-spacing: 1.4px;
+    text-align: center;
+}
+
+a {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 29px;
+    letter-spacing: 1.4px;
+    text-align: center;
+    text-decoration: none;
+    color: $black;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 2px;
+}
+
