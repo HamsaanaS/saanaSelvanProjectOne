@@ -1,0 +1,45 @@
+// HEADER STYLES
+header {
+    background-image: url(../../../assets/contact-header.jpg);
+    height: 60vh;
+    object-fit: contain;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 1rem;
+}
+
+.navMenu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navMenu li {
+    margin-left: 0.3rem;
+}
+
+.navMenu a {
+    padding: 0.5rem;
+}
+
+.burgerMenu {
+    position: absolute;
+    right: 1.5rem;
+    display: none;
+}
+
+// HEADER END
+
+footer {
+    background: $blackTwo;
+    padding: 0.5rem 0;
+}
+footer p {
+    color: $white;
+    text-align: center;
+}

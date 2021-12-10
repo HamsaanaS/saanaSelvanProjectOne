@@ -1,65 +1,21 @@
 // COLOR VARIABLES
 $darkBlue: #1A315C;
+$darkGreen: #113d4f;
 $turquoiseBlue: #0CADC0;
 $lightBlue: #CCEDFB;
 $black: #1E1713;
 $blackTwo: #161515;
 $white: #FFFFFF;
+$buttonBlue: #C5D4F4;
 
 @import 'setup';
 @import 'typography';
-
-html {
-    font-size: 125%;
-}
+@import 'headerFooter';
 
 .wrapper {
-    max-width: 1080px;
+    max-width: 1250px;
     width: 80%;
     margin: 0 auto;
-}
-
-header {
-    background-color: grey;
-    height: 75vh;
-    position: relative;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-}
-
-.navMenu {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.navMenu li {
-    margin-left: 0.25rem;
-}
-
-.navMenu a {
-    padding: 0.25rem;
-}
-
-.burgerMenu {
-    position: absolute;
-    right: 1.5rem;
-    display: none;
-}
-
-
-figure {
-    max-width: 675px;
-    width: 60%;
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    left: 0;
-    bottom: -30%;
-    display: none;
 }
 
 img {
@@ -68,20 +24,20 @@ img {
 
 // LEARN SECTION
 .learnSection {
+    height: 75vh;
     background: $lightBlue;
-    padding: 6rem 0 4rem;
 }
 
 .learnFlexContainer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding-top: 15%;
 }
 
 .learnTextFlex {
     display: flex;
     flex-direction: column;
-    width: 55%;
+    width: 65%;
 }
 
 .learnImgContainer {
@@ -89,13 +45,12 @@ img {
 }
 
 .learnImg {
-    width: 300px;
+    width: 275px;
 }
 
 .learnImg img {
-    box-shadow: 60px -16px $turquoiseBlue;
-}
-// LEARN SECTION END
+    box-shadow: $turquoiseBlue -20px 20px;
+} // LEARN SECTION END
 
 .gallery {
     background-color: $darkBlue;
@@ -113,12 +68,11 @@ img {
 
 .galleryFlex li:nth-child(2) {
     margin: 0 0.5rem;
-}
-//  GALLERY END
+}//  GALLERY END
 
 .upcomingSection {
     background-color: $lightBlue;
-    padding: 2rem 0;
+    padding: 4rem 0;
 }
 
 .upcomingFlex {
@@ -129,35 +83,65 @@ img {
 
 .upcomingFlex li {
     width: 50%;
+} // UPCOMING SECTION END
+
+
+.readMoreSection {
+    background-color: $darkGreen;
+    padding: 2rem 0;
 }
 
-// UPCOMING SECTION END
-
-.discoverSection {
-    background: $darkBlue;
-    padding: 3rem 0;
+.readMoreContainer {
+    color: $white;
+    // width: 100%;
+    // height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 6rem;
+    grid-template-rows: repeat(2, 1fr);
+    
 }
-
-.discoverFlex1, .discoverFlex2 {
+.discoverTxt, .locationTxt {
+    width: 80%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.discoverFlex1Img, .discoverFlex2Txt {
-    width: 65%;
+.discoverTxt {
+    text-align: right;
+    align-items: left;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
 }
 
-.discoverFlex1Txt, .discoverFlex2Img {
-    width: 35%;
+.pinkImg, .handsImg {
+    width: 43vw;
+    position: relative;
+}
+.pinkImg img {
+    width: 100%;
+    box-shadow: $turquoiseBlue 20px 20px;
+    position: absolute;
+    left: 0;
+    top: -3rem;
 }
 
-.discoverFlex1Txt, .discoverFlex2Txt {
-    text-align: left;
+.handsImg img {
+    width: 100%;
+    box-shadow: $turquoiseBlue -20px 20px;
+    position: absolute;
+    right: -1.6rem;
 }
+
+// READ MORE SECTION END
 
 .ropeBackgroundImg {
-    background: grey;
-    padding: 5rem 0;
+    height: 50vh;
+    background: url(../../../assets/banner.jpg);
+    object-fit: cover;
+    object-position: center;
 }
 
 .searchSection {
@@ -170,13 +154,4 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-footer {
-    background: $blackTwo;
-    padding: 1rem 0;
-}
-footer p {
-    color: $white;
-    text-align: center;
 }

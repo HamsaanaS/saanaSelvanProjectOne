@@ -1,3 +1,164 @@
-html {
-    font-size: 125%;
+// COLOR VARIABLES
+$darkBlue: #1A315C;
+$darkGreen: #113d4f;
+$turquoiseBlue: #0CADC0;
+$lightBlue: #CCEDFB;
+$black: #1E1713;
+$blackTwo: #161515;
+$white: #FFFFFF;
+$buttonBlue: #C5D4F4;
+
+@import 'stup';
+@import 'typography';
+@import 'headerFooter';
+
+
+
+.wrapper {
+    max-width: 1080px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+main {
+    background-color: $lightBlue;
+    position: relative;
+}
+
+
+// ASIDE
+aside {
+    width: 27.5%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: fit-content;
+    align-items: left;
+    background-color: $darkGreen;
+    position: absolute;
+    right:0;
+    top: 8rem;
+}
+
+.asideImg {
+    position: relative;
+}
+
+.asideImg img {
+    position: absolute;
+    top: -1rem;
+    right: 0;
+}
+
+.asideTxt {
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    padding: 22.5rem 3.5rem 2.3rem 2.3rem;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+}
+// BLOG SECTION
+.blogSection {
+    display: flex;
+    justify-content: space-between;
+    color: $white;
+}
+
+.blog {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    background-color: $darkGreen;
+    border-top: solid 0.5rem $turquoiseBlue;
+    border-right: solid 0.5rem $turquoiseBlue;
+    border-bottom: solid 0.5rem $turquoiseBlue;
+    position: relative;
+}
+
+.blogImage {
+    width: 100%;
+}
+
+.blogImage img {
+    width: 100%;
+    box-shadow: 25px 25px $turquoiseBlue;
+    position: absolute;
+    top: -8rem;
+    left: -0.75rem;
+}
+
+.blogTxt {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 25rem 0 2.5rem 7rem;
+} // BLOG SECTION END
+
+
+// COMMENTS SECTION
+.comments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 1rem;
+
+}
+.userComment {
+    width: 60vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.louiseImage, .jpImage {
+    width: 200px;
+}
+
+.louiseComment, .jpComment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+// FORM 
+form {
+    width: 65%;
+    margin: 0;
+    padding: 4rem;
+}
+input {
+    width: 45.5%;
+    background-color: $lightBlue;
+    margin: 0.5rem 0;
+    padding: 1rem 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 2px $turquoiseBlue;
+}
+
+input[type=email] {
+    margin-left: 2.5rem;
+}
+textarea {
+    width: 100%;
+    border: solid 2px $turquoiseBlue;
+    background-color: $lightBlue;
+    resize: none;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 0.5rem 0;
+    background-color: $darkBlue;
+    border-style: none;
+    padding: 0.5rem 0;
+    margin: 1rem 0;
 }
