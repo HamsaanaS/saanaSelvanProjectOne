@@ -74,7 +74,7 @@ button {
   width: 30%;
 }
 
-i {
+.upcomingSection i {
   color: #FFFFFF;
   font-size: 1.25rem;
   text-align: center;
@@ -303,4 +303,148 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 1200px) {
+  figure {
+    display: none;
+  }
+
+  h1 {
+    margin-top: 8rem;
+  }
+
+  .learnSection {
+    height: auto;
+  }
+
+  .learnFlexContainer {
+    padding: 4rem 0;
+  }
+}
+@media (max-width: 1115px) {
+  h1 {
+    text-align: center;
+    margin: 8rem auto 0 auto;
+  }
+
+  .learnFlexContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5rem 0;
+  }
+
+  .learnImg img {
+    box-shadow: #0CADC0 -20px 20px, #0CADC0 20px -20px;
+  }
+
+  .learnTextFlex {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding-top: 5rem;
+  }
+
+  .upcomingFlex li {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .readMoreSection {
+    height: auto;
+    padding: 2rem 0;
+  }
+
+  .readMoreContainer {
+    display: flex;
+    flex-direction: column;
+    -moz-column-gap: normal;
+         column-gap: normal;
+  }
+
+  .discoverTxt, .locationTxt {
+    text-align: center;
+    align-items: center;
+    margin: 4rem auto;
+  }
+
+  .discoverTxt button, .locationTxt button {
+    margin-top: 1rem;
+  }
+
+  .pinkImg, .handsImg {
+    width: 70%;
+    margin: 2rem auto;
+  }
+
+  .pinkImg img, .handsImg img {
+    position: static;
+    box-shadow: none;
+  }
+
+  .searchSection div {
+    text-align: center;
+  }
+
+  .searchSection div button {
+    width: auto;
+    padding: 0 0.5rem;
+  }
+}
+@media (max-width: 690px) {
+  header {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .navMenu {
+    display: none;
+  }
+
+  .burgerMenu {
+    font-size: 1.25rem;
+    display: inline-block;
+    padding-top: 0.75rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  p, button {
+    font-size: 0.9rem;
+  }
+
+  .learnTextFlex {
+    padding-top: 2.5rem;
+  }
+
+  .galleryFlex {
+    flex-direction: column;
+  }
+
+  .galleryFlex li {
+    width: 100%;
+  }
+
+  .galleryFlex li:nth-child(2) {
+    margin: 1rem 0;
+  }
+
+  .discoverTxt, .locationTxt {
+    text-align: center;
+    align-items: center;
+    margin: 1.5rem auto;
+  }
 }/*# sourceMappingURL=style.css.map */
