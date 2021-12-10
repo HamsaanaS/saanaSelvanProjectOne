@@ -1,0 +1,58 @@
+@media (max-width: 1256px){
+
+    main{
+        height: auto;
+    }
+
+    h1 {
+        padding-left: 10%;
+        padding-top: 10%;
+    }
+
+    form, aside {
+        width: 70%;
+        text-align: center;
+        align-items:center;
+        position: static;
+        margin: 4rem;
+    }
+}
+
+@media (max-width: 990px){
+    h1 {
+        text-align: center;
+        padding: 4rem 0;
+    }
+    form {
+        width: 80%;
+    }
+    aside p {
+        margin: 0.5rem;
+    }
+}
+
+@media (max-width: 864px) {
+    header {
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .navMenu {
+        display: none;
+    }
+    .burgerMenu {
+        display: inline-block;
+        padding-top: 0.75rem;
+    }
+
+    h1 {
+        padding-top: 40vh;
+    }
+    input {
+        width: 100%;
+    }
+    input[type=email] {
+        margin-left: 0;
+    }
+}

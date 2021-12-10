@@ -1,7 +1,7 @@
 // HEADER STYLES
 header {
-    background-image: url(../../../assets/contact-header.jpg);
-    height: 60vh;
+    background-image: url(../../../assets/blog-header.jpg);
+    height: 50vh;
     object-fit: contain;
     position: relative;
 }
@@ -31,13 +31,11 @@ nav {
     position: absolute;
     right: 1.5rem;
     display: none;
-}
-
-// HEADER END
+} // HEADER END
 
 footer {
     background: $blackTwo;
-    padding: 0.5rem 0;
+    padding: 0.25rem 0;
 }
 footer p {
     color: $white;
