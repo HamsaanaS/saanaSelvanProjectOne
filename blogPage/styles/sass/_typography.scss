@@ -6,7 +6,7 @@ html {
 }
 
 // FONT FAMILIES
-h1, h2, h3, h4, h5, .logo, button {
+h1, h2, h3, .logo, button {
     font-family: 'Pacifico', cursive;
     font-weight: lighter;
     margin: 0;
@@ -68,7 +68,7 @@ a:hover, a:focus {
 
 // GENERAL BODY
 p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: lighter;
     line-height: 1.5rem;
     letter-spacing: 0.1rem;
@@ -96,12 +96,20 @@ div.blogTxt:nth-child(2) {
 }
 
 // COMMENTS
-.commentsSection h2 {
+.comments h2 {
     color: $black;
+    margin: 2rem 0;
 }
 
-.commentsSection p {
-    font-size: 0.9rem;
+.comments p {
+    font-size: 0.85rem;
+    letter-spacing: 0;
+}
+
+span {
+    color: $darkBlue;
+    font-weight: bold;
+    line-height: 1.75rem;
 }
 
 

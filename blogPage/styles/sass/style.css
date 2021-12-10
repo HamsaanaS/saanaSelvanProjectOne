@@ -226,7 +226,7 @@ html {
   font-size: 125%;
 }
 
-h1, h2, h3, h4, h5, .logo, button {
+h1, h2, h3, .logo, button {
   font-family: "Pacifico", cursive;
   font-weight: lighter;
   margin: 0;
@@ -286,7 +286,7 @@ a:hover, a:focus {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: lighter;
   line-height: 1.5rem;
   letter-spacing: 0.1rem;
@@ -311,12 +311,20 @@ div.blogTxt:nth-child(2) {
   margin: 0 1rem;
 }
 
-.commentsSection h2 {
+.comments h2 {
   color: #1E1713;
+  margin: 2rem 0;
 }
 
-.commentsSection p {
-  font-size: 0.9rem;
+.comments p {
+  font-size: 0.85rem;
+  letter-spacing: 0;
+}
+
+span {
+  color: #1A315C;
+  font-weight: bold;
+  line-height: 1.75rem;
 }
 
 ::-moz-placeholder {
@@ -429,21 +437,12 @@ aside {
   padding: 22.5rem 3.5rem 2.3rem 2.3rem;
 }
 
-.flexContainer {
-  display: flex;
-  flex-direction: column;
-}
-
-.blogSection {
-  display: flex;
-  justify-content: space-between;
-  color: #FFFFFF;
-}
-
 .blog {
+  color: #FFFFFF;
   width: 60%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: #113d4f;
   border-top: solid 0.5rem #0CADC0;
   border-right: solid 0.5rem #0CADC0;
@@ -471,35 +470,44 @@ aside {
   padding: 25rem 0 2.5rem 7rem;
 }
 
+.commentsSection {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 3rem 0 0 7rem;
+  padding-bottom: 3rem;
+}
+
 .comments {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 60%;
-  margin: 1rem;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 3rem 0;
 }
 
 .userComment {
-  width: 60vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
-.louiseImage, .jpImage {
-  width: 200px;
+.commentsImg {
+  width: 25%;
 }
 
-.louiseComment, .jpComment {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.commentsImg img {
+  width: 75%;
+}
+
+.commentsTxt {
+  width: 75%;
 }
 
 form {
-  width: 65%;
   margin: 0;
-  padding: 4rem;
+  padding: 2rem 0;
 }
 
 input {
@@ -514,7 +522,7 @@ input {
 }
 
 input[type=email] {
-  margin-left: 2.5rem;
+  margin-left: 2rem;
 }
 
 textarea {
@@ -533,4 +541,96 @@ button {
   border-style: none;
   padding: 0.5rem 0;
   margin: 1rem 0;
+}
+
+@media (max-width: 1250px) {
+  main {
+    padding-top: 3rem;
+  }
+
+  aside {
+    display: none;
+  }
+
+  .blog, .blogImage, .commentsSection {
+    margin: 0 auto;
+  }
+
+  .blog {
+    width: 75%;
+    align-items: center;
+    border: solid 4px #0CADC0;
+    padding-top: 1rem;
+  }
+
+  .blogImage {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .blog img {
+    position: static;
+    box-shadow: none;
+    border: solid 2px #0CADC0;
+  }
+
+  .blogTxt {
+    padding: 2rem 0;
+  }
+
+  .commentsSection {
+    width: 70%;
+    padding: 3rem 0;
+  }
+
+  .comments {
+    margin: 2rem 0;
+  }
+
+  form {
+    padding: 4rem 0;
+  }
+
+  button {
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 900px) {
+  h1 {
+    text-align: center;
+    margin: 0;
+    padding-top: 8rem;
+  }
+}
+@media (max-width: 715px) {
+  .navMenu {
+    display: none;
+  }
+
+  .burgerMenu {
+    display: inline-block;
+    font-size: 1.5rem;
+  }
+
+  .blog {
+    width: 80%;
+  }
+
+  .commentsSection {
+    width: 75%;
+  }
+
+  .comments {
+    align-items: center;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  input[type=email] {
+    margin: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

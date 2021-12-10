@@ -56,21 +56,14 @@ aside {
     padding: 22.5rem 3.5rem 2.3rem 2.3rem;
 }
 
-.flexContainer {
-    display: flex;
-    flex-direction: column;
-}
-// BLOG SECTION
-.blogSection {
-    display: flex;
-    justify-content: space-between;
-    color: $white;
-}
 
+// BLOG SECTION
 .blog {
+    color: $white;
     width: 60%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: $darkGreen;
     border-top: solid 0.5rem $turquoiseBlue;
     border-right: solid 0.5rem $turquoiseBlue;
@@ -99,37 +92,45 @@ aside {
 } // BLOG SECTION END
 
 
-// COMMENTS SECTION
+.commentsSection {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 3rem 0 0 7rem;
+    padding-bottom: 3rem;
+}
+
+// COMMENTS
 .comments {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 60%;
-    margin: 1rem;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 3rem 0;
 
 }
 .userComment {
-    width: 60vw;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
-.louiseImage, .jpImage {
-    width: 200px;
+.commentsImg {
+    width: 25%;
 }
+.commentsImg img {
+    width: 75%;
+}
+.commentsTxt {
+    width: 75%
+} // COMMENTS END
 
-.louiseComment, .jpComment {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 // FORM 
 form {
-    width: 65%;
     margin: 0;
-    padding: 4rem;
+    padding: 2rem 0;
 }
 input {
     width: 45.5%;
@@ -143,7 +144,7 @@ input {
 }
 
 input[type=email] {
-    margin-left: 2.5rem;
+    margin-left: 2rem;
 }
 textarea {
     width: 100%;
@@ -161,4 +162,6 @@ button {
     border-style: none;
     padding: 0.5rem 0;
     margin: 1rem 0;
-}
+} // FORM END
+
+@import 'mediaQueries';
