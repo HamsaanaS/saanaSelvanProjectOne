@@ -402,12 +402,21 @@ img {
 
   .navMenu {
     display: none;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-evenly;
+    inset: 0 0 0 65%;
+    background-color: #CCEDFB;
   }
 
   .burgerMenu {
     font-size: 1.25rem;
-    display: inline-block;
+    display: block;
     padding-top: 0.75rem;
+  }
+
+  .navMenu.slideOut {
+    display: flex;
   }
 
   h1 {
