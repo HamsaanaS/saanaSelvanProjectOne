@@ -60,8 +60,9 @@
         margin: 2rem auto;
     }
     .pinkImg img, .handsImg img  {
-        position: static;
+        position: relative;
         box-shadow: none;
+        z-index: 10;
     }
     .searchSection div {
         text-align: center;
@@ -79,23 +80,35 @@
         background-position: center;
         background-size: cover;
     }
+
     .navMenu {
-        display: none;
+        visibility: hidden;
         position: fixed;
         flex-direction: column;
         justify-content: space-evenly;
-        inset: 0 0 0 65%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 0;
+        z-index: 20;
         background-color: $lightBlue;
+        transition: all ease-out 0.5s;
     }
 
     .burgerMenu {
         font-size: 1.25rem;
         display: block;
+        position: fixed;
+        top: 3.5%;
+        right: 13%;
+        z-index: 20;
         padding-top: 0.75rem;
     }
 
     .navMenu.slideOut {
-        display: flex;
+        // display: flex;
+        visibility: visible;
+        width: 30%;
     }
     
     h1 {

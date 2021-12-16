@@ -12,6 +12,11 @@ $buttonBlue: #C5D4F4;
 @import 'typography';
 @import 'headerFooter';
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .wrapper {
     max-width: 1250px;
     width: 80%;

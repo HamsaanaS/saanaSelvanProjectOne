@@ -9,4 +9,4 @@ hamburgerMenu.addEventListener(`click`, function() {
     slideOutNav.classList.toggle(`slideOut`);
 });
 
-// hamburgerMenu();
+hamburgerMenu();

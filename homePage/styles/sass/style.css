@@ -163,6 +163,11 @@ footer p {
   text-align: center;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .wrapper {
   max-width: 1250px;
   width: 80%;
@@ -379,8 +384,9 @@ img {
   }
 
   .pinkImg img, .handsImg img {
-    position: static;
+    position: relative;
     box-shadow: none;
+    z-index: 10;
   }
 
   .searchSection div {
@@ -401,22 +407,32 @@ img {
   }
 
   .navMenu {
-    display: none;
+    visibility: hidden;
     position: fixed;
     flex-direction: column;
     justify-content: space-evenly;
-    inset: 0 0 0 65%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    z-index: 20;
     background-color: #CCEDFB;
+    transition: all ease-out 0.5s;
   }
 
   .burgerMenu {
     font-size: 1.25rem;
     display: block;
+    position: fixed;
+    top: 3.5%;
+    right: 13%;
+    z-index: 20;
     padding-top: 0.75rem;
   }
 
   .navMenu.slideOut {
-    display: flex;
+    visibility: visible;
+    width: 30%;
   }
 
   h1 {
